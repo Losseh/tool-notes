@@ -1,0 +1,12 @@
+## kill all docker containers
+
+```bash
+docker stop $(docker ps -q)
+```
+
+## get into docker container
+
+```bash
+docker ps
+docker exec -it CONTAINER_ID bash
+```
