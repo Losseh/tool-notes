@@ -166,3 +166,32 @@ git config --list
 ```bash
 git clean -fd --dry-run
 ```
+
+## stage git changes
+
+```bash
+git status | grep modified | awk '{ print $2 }' | fzf --multi | xargs git add
+```
+
+# clean git branches
+
+## only list 'date(last commited) - branch name'
+```bash
+git for-each-ref --sort=committerdate refs/heads/ --format='%(committerdate:short) %(refname:short)' | grep -vE "main|master|develop"
+```
+
+## safe select branches to delete
+```bash
+git for-each-ref --sort=committerdate refs/heads/ --format='%(committerdate:short) %(refname:short)' | \
+grep -vE "main|master|develop" | \
+fzf --multi --header="Select branches to DELETE (Tab to mark, Enter to confirm)" | \
+awk '{print $2}' | xargs git branch -d
+```
+
+## !!! select branches to FORCE delete !!!
+```bash
+git for-each-ref --sort=committerdate refs/heads/ --format='%(committerdate:short) %(refname:short)' | \
+grep -vE "main|master|develop" | \
+fzf --multi --header="Select branches to DELETE (Tab to mark, Enter to confirm)" | \
+awk '{print $2}' | xargs git branch -D
+```
