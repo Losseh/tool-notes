@@ -5,6 +5,14 @@
 git pull --rebase=true
 ```
 
+# git checkout
+
+## create a branch from commit-hash
+
+```bash
+git checkout -b <new-branch-name> <commit-hash>
+```
+
 
 # git cherry-pick
 
@@ -15,7 +23,6 @@ https://luppeng.wordpress.com/2020/10/10/when-to-use-each-of-the-git-diff-algori
 ```bash
 git cherry-pick -Xhistogram
 ```
-
 
 
 # git reset
