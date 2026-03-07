@@ -251,6 +251,20 @@ git clean -fd --dry-run
 git status | grep modified | awk '{ print $2 }' | fzf --multi | xargs git add
 ```
 
+
+# stacked branches
+
+## --update-refs
+
+```bash
+git commit --fixup <A>
+
+git rebase -i --autosquash --update-refs master
+
+git push --force-with-lease origin \
+  feature/A feature/B feature/C feature/D
+```
+
 # clean git branches
 
 ## only list 'date(last commited) - branch name'
