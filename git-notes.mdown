@@ -265,6 +265,23 @@ git push --force-with-lease origin \
   feature/A feature/B feature/C feature/D
 ```
 
+## --update-refs with aliases
+
+```bash
+[alias]
+	st = status
+	ll = log --oneline
+	fixup = commit --fixup
+	riau = rebase -i --autosquash --update-refs
+	pusho = push origin
+```
+
+```bash
+git fixup <commit>
+git riau <base>
+git pusho <branch1> ... <branchN>
+```
+
 # clean git branches
 
 ## only list 'date(last commited) - branch name'
