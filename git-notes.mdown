@@ -287,3 +287,13 @@ grep -vE "main|master|develop" | \
 fzf --multi --header="Select branches to DELETE (Tab to mark, Enter to confirm)" | \
 awk '{print $2}' | xargs git branch -D
 ```
+
+# diff
+
+## delta
+
+`https://github.com/dandavison/delta?tab=readme-ov-file`
+
+```bash
+sudo apt install git-delta
+```
