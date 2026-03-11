@@ -122,10 +122,22 @@ git clean -f
 
 # git branch
 
+## Rename a current branch
+
+```bash
+git branch -m <branch-name>
+```
+
 ## Rename a branch
 
 ```bash
-git branch -m <new-branch-name>
+git branch -m <old-branch> <new-branch>
+```
+
+## Make a branch for a commit
+
+```bash
+git branch <branch-name> <commit-hash>
 ```
 
 # git rebase
