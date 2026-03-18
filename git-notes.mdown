@@ -260,7 +260,7 @@ git clean -fd --dry-run
 ## stage git changes
 
 ```bash
-git status | grep modified | awk '{ print $2 }' | fzf --multi | xargs git add
+git status --short | grep -E "^ M|^ D" | cut -c 4- | fzf --multi | xargs git add -u
 ```
 
 
