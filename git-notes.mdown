@@ -326,3 +326,18 @@ awk '{print $2}' | xargs git branch -D
 ```bash
 sudo apt install git-delta
 ```
+
+# worktree
+
+## create worktree copy with existing branch
+
+```bash
+git worktree ../repo-copy-branch-name branch-name
+git worktree <path-to-worktree> <branch-name>
+```
+
+## remove
+
+```bash
+git worktree remove <path-to-worktree>
+```
