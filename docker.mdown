@@ -10,3 +10,64 @@ docker stop $(docker ps -q)
 docker ps
 docker exec -it CONTAINER_ID bash
 ```
+
+
+Port mapping -p port-outside:port-inside
+Volume mapping -v ext-vol:inside-vol
+docker inspect [container name/id]
+docker logs [container name/id]
+
+## create volume to store data written by the container
+
+```bash
+docker create volume data_volume
+```
+
+## volume mounting
+
+```bash
+docker run -v data_volume:/var/lib/mysql mysql (creates volume automatically if it doesnt exist yet)
+```
+
+## bind mounting
+
+```bash
+docker run -v /some/path:/var/lib/mysql mysql (pass an existing dir)
+```
+
+```bash
+docker run --mount \
+type=bind,source=/some/path,target=/var/lib/mysql mysql
+```
+
+## show all volumes
+
+```bash
+ls /var/lib/docker/volumes
+```
+
+## docker-compose.yml
+
+```
+main_image:
+  subimage1:
+    image: my_img
+    ports:
+      - 1000:80
+  subimage2:
+    image: my_another_image (repo)
+    ports:
+      - 1001:80
+    links: 
+      - subimage1
+   my_subimage:
+     build: ./my_subimage (Dockerfile path)
+     links:
+      - subimage1
+      - subimage2
+```
+
+## versions
+- Version 1 forces using links
+- Version 2 and higher enables no use of links, must begin from 'version: 2\nservices:', introduces depends_on feature to enforce startup order
+- Version 3 which supports docker swarm feature
