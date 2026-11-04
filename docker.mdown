@@ -71,3 +71,11 @@ main_image:
 - Version 1 forces using links
 - Version 2 and higher enables no use of links, must begin from 'version: 2\nservices:', introduces depends_on feature to enforce startup order
 - Version 3 which supports docker swarm feature
+
+
+## list local images by size
+
+```bash
+docker images --format "{{.ID}}\t{{.Size}}\t{{.Repository}}" | sort -k 2 -h
+```
+
