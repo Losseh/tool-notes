@@ -26,6 +26,13 @@
 - s - split window
 - v - vsplit window
 
+### macros
+
+1. q - start recording
+2. macro name, e.g. 1
+3. do steps
+4. q - stop recording
+
 ## installation
 
 ```bash
