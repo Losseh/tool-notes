@@ -1,5 +1,31 @@
 # nvim.md
 
+## shortcuts
+
+### space - search
+
+- '/' - fuzzy search
+- s - files
+
+### \ - neotree
+
+- backspace - dir up
+- s - open in split
+- S - open in vsplit
+- a - new file
+- d - drop
+- r - rename
+- y - yank (copy)
+- x - cut
+- c - copy
+- m - move
+
+### buffers navifagation - ctrl + w
+
+- w - next buffer
+- s - split window
+- v - vsplit window
+
 ## installation
 
 ```bash

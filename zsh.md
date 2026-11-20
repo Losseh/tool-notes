@@ -8,7 +8,7 @@ sudo apt install zsh
 
 ## oh-my-zsh
 
-https://github.com/ohmyzsh/ohmyzsh
+[oh-my-zsh: "https://github.com/ohmyzsh/ohmyzsh"]
 
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
