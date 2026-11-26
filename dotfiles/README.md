@@ -3,11 +3,11 @@
 ## run
 
 ```bash
-stow zsh yazi zellij
+stow -t /home/aszymanski zsh yazi zellij
 ```
 
 ## dry-run
 
 ```bash
-stow -n -v zsh yazi zellij
+stow -t /home/aszymanski -n -v zsh yazi zellij
 ```

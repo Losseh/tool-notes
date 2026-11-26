@@ -2,5 +2,12 @@
 
 ## show installed
 
-`snap list`
+```bash
+snap list
+```
 
+## update
+
+```bash
+snap refresh
+```

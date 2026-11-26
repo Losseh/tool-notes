@@ -3,12 +3,19 @@
 ## sudo-apt
 
 ```bash
-sudo apt update
+sudo apt update && \
 sudo apt install rg \
   fdfind \
   jq \
   fzf \
   xclip \
   stow \
-  bat
+  bat \
+  btop \
+  ncdu \
+  snap
+```
+
+```bash
+snap install firefox
 ```

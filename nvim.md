@@ -72,6 +72,16 @@ sudo apt install neovim
 
 for syntax recognition
 
+### tree-sitter installation
+
+#### with cargo
+
+```bash
+cargo install tree-sitter-cli
+```
+
+#### from zip
+
 ```bash
 curl -L https://github.com/tree-sitter/tree-sitter/releases/download/v0.27.2/tree-sitter-cli-linux-x64.zip \
   -o /tmp/tree-sitter.zip
@@ -89,36 +99,4 @@ npm i -g markdownlint-cli
 
 ```bash
 git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
-```
-
-## pluginy do javy
-
-```bash
-nvim-java
-spring-boot.nvim
-nvim-dap
-nui.nvim
-blink.cmp
-telescope.nvim
-plenary.nvim
-oil.nvim
-which-key.nvim
-```
-
-## ~/.config/nvim/init.lua
-
-```bash
-vim.g.have_nerd_font = true
-```
-
-## themes
-
-```lua
-vim.pack.add { gh 'ellisonleao/gruvbox.nvim' }
-  ---@diagnostic disable-next-line: missing-fields
-  require('gruvbox').setup {
-    styles = {
-      comments = { italic = false }, -- Disable italics in comments
-  },
-}
 ```
