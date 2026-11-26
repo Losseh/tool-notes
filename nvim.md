@@ -7,18 +7,45 @@
 - '/' - fuzzy search
 - s - files
 
+### z - folding
+
+- `za` - toggles the fold under the cursor
+- `zM` - closes all folds
+- `zR` - opens all folds
+
+### commands
+
+general structure: `range` `command`
+
+#### full buffer - `%`
+
+`:%!cmd`, e.g.:
+
+- `:%!jq .` - pretty prints the json file
+- `:%!js -c .` - minifies a json file
+- `:%!jq '.items[0]'` replaces the buffer with one part of the file.
+
+#### specific ranges
+
+- `:10,20!sort` - sort lines from 10 to 20 (both included)
+- `:10,20!sort | uniq` - sort lines and remove duplicates from 10 to 20 (both included)
+
+#### visual selection range
+
+- `:'<,'>!cmd` -  filters only the selected lines.
+
 ### \ - neotree
 
+- a - new file
 - backspace - dir up
+- c - copy
+- d - drop
+- m - move
+- r - rename
 - s - open in split
 - S - open in vsplit
-- a - new file
-- d - drop
-- r - rename
-- y - yank (copy)
 - x - cut
-- c - copy
-- m - move
+- y - yank (copy)
 
 ### buffers navifagation - ctrl + w
 
