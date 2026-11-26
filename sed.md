@@ -1,4 +1,6 @@
-# cat show specific lines from file
+# sed
+
+## cat lines range
 
 `sed -n FROM,TOp file`
 e.g.
