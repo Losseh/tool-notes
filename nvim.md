@@ -34,19 +34,6 @@ general structure: `range` `command`
 
 - `:'<,'>!cmd` -  filters only the selected lines.
 
-### \ - neotree
-
-- a - new file
-- backspace - dir up
-- c - copy
-- d - drop
-- m - move
-- r - rename
-- s - open in split
-- S - open in vsplit
-- x - cut
-- y - yank (copy)
-
 ### buffers navifagation - ctrl + w
 
 - w - next buffer
@@ -59,6 +46,10 @@ general structure: `range` `command`
 2. macro name, e.g. 1
 3. do steps
 4. q - stop recording
+
+### font resizing
+
+`set guifont=Source Code Pro,DejaVu Sans Mono,Courier New,monospace:h10`
 
 ## installation
 
