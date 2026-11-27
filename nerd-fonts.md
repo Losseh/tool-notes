@@ -2,7 +2,8 @@
 
 ## gh
 
-[(GitHub link)[https://github.com/ryanoasis/nerd-fonts]]
+
+[GitHub link](https://github.com/ryanoasis/nerd-fonts)
 
 ## installation
 
@@ -10,7 +11,7 @@
 mkdir -p ~/.local/share/fonts
 cd ~/.local/share/fonts
 curl -fLO https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FiraCode.zip
-unzip FiraCode.zip
+unzip FiraCode.zip -d FiraCode
 rm FiraCode.zip
 fc-cache -fv
 ```
@@ -24,5 +25,5 @@ fc-cache -fv
 
 ## fonts
 
-- FiraCode[https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraMono]
-- JetBrainsMono[https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/JetBrainsMono]
+- [FiraCode](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraMono)
+- [JetBrainsMono](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/JetBrainsMono)
