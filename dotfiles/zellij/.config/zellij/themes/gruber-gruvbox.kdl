@@ -2,7 +2,7 @@ themes {
     gruber-gruvbox {
         terminal_colors {
             black "#282828"
-            red "#cc241d"
+            red "#c14a4a"
             green "#98971a"
             yellow "#d79921"
             blue "#458588"
@@ -10,7 +10,7 @@ themes {
             cyan "#689d6a"
             white "#a89984"
             bright_black "#928374"
-            bright_red "#fb4934"
+            bright_red "#ea6962"
             bright_green "#b8bb26"
             bright_yellow "#fabd2f"
             bright_blue "#83a598"
