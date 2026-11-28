@@ -1,0 +1,9 @@
+[user]
+	email = aszymanski90@gmail.com
+	name = Adrian Szymański
+[core]
+	editor = nvim
+[alias]
+	st = status
+	ll = log --oneline
+	dd = diff
