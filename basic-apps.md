@@ -5,7 +5,8 @@
 ```bash
 sudo apt update && \
 sudo apt install rg \
-  fdfind \
+  fd-find \
+  ripgrep \
   jq \
   fzf \
   xclip \
