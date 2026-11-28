@@ -94,6 +94,31 @@ git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HO
 
 ## neovide
 
-```
+```bash
 cargo install --git https://github.com/neovide/neovide
+```
+
+### icon
+
+```bash
+mkdir -p ~/.local/share/icons
+curl https://raw.githubusercontent.com/neovide/neovide/refs/heads/main/assets/neovide.svg -o ~/.local/share/icons/neovide.svg
+```
+
+### desktop entry
+
+```bash
+mkdir -p ~/.local/share/applications
+cat > ~/.local/share/applications/neovide.desktop <<EOF
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Neovide
+Comment=Neovim GUI
+Exec=$HOME/.cargo/bin/neovide %F
+Icon=neovide
+Terminal=false
+Categories=Utility;TextEditor;
+StartupWMClass=neovide
+EOF
 ```
