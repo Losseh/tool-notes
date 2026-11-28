@@ -509,7 +509,7 @@ ui {
     }
 }
 terminal {
-    font "FiraMono Nerd Font Mono"
+    font "FiraCode Nerd Font Mono"
     font_size 11
     cursor_style "bar"
     cursor_blink true
