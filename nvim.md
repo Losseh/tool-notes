@@ -91,3 +91,9 @@ npm i -g markdownlint-cli
 ```bash
 git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 ```
+
+## neovide
+
+```
+cargo install --git https://github.com/neovide/neovide
+```
